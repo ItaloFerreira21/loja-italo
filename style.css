@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 header {
 
@@ -10,10 +13,18 @@ main {
 }
 
 section#produto {
+    background-color: azure;
+   
     
 }
 
-div#produto-1 > img {
+#produto  img {
     height: 200px;
+    border: 1px 1px solid red;
+    
+}
+
+.marca {
+    color: rgb(4, 151, 249);
 }
 

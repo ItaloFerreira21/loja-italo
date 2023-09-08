@@ -84,11 +84,11 @@ const catalogo = [
 ];
 
 for (const produtoCatalogo of catalogo) {
-    const cartaoProduto =  `<div id="produto-1">
+    const cartaoProduto =  `<div class='border-solid border-2 border-sky-500' id="produto-${produtoCatalogo.id}">
 <img 
 src="imagens/${produtoCatalogo.imagem}" alt="">
 
-<p>${produtoCatalogo.marca}<p/>
+<p class= 'marca'>${produtoCatalogo.marca}<p/>
 <p>${produtoCatalogo.nome}<p/>
 <p>$${produtoCatalogo.preco}<p/>
 <button>Adicionar</button>
