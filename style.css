@@ -1,30 +1,99 @@
 @charset "utf-8";
 
-@tailwind base;
+/**@tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;**/
 
 header {
-
+    
+    padding-bottom: 10px;
+    padding-top: 5px;
+    background-color: rgb(19, 108, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+    
+}
+header > img {
+    height: 70px;
+    padding-left: 15px;
+}
+div#botao button {
+    cursor: pointer;
+    margin-right: 5px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 15px;
 }
 
-main {
+section#carrinho {
+    position: fixed;
+    top: 0;
+    right: -0;
+    background-color: rgba(32, 32, 148, 0.36);
+    height: 100vh;
+    width: 360px;
+    color: black;
+    
+}
+div#cabecalho-carrinho button {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+
+}
+button.finalizar  {
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    padding: 1px;
+    color: rgba(250, 245, 245, 0.755);
+}
+
+
+main {
+    min-width: 350px;
+    max-width: 850px;
+    margin: auto;
 }
 
 section#produto {
+    border: 1px solid black;
     background-color: azure;
-   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 2px;
     
+       
 }
 
-#produto  img {
-    height: 200px;
-    border: 1px 1px solid red;
+#produto img {
+    height: 150px;
+    border: 1px solid black;
+   
+}
+
+button#ad {
+    background-color: transparent;
+    border: none;
     
+    cursor: pointer;
+    
+
 }
 
 .marca {
     color: rgb(4, 151, 249);
+    
 }
 
